@@ -9,21 +9,21 @@ Millimeter-wave (mmWave) and terahertz (THz) communication systems adopt large a
 The scripts for generating the results of the ML solutions in the paper. This script adopts Scenario 5 and Scenario 7 of DeepSense6G dataset.
 To reproduce the results, please follow these steps:
 
-**Download Dataset and Code**
+**Download Dataset and Code** \n
 Download Scenario 5 and Scenario 7 of Deepsense6G dataset.
 Download (or clone) the repository into a directory.
 Extract the dataset into the repository directory
 
-**Generate Development Dataset**
+**Generate Development Dataset** \n
 Run 'MobilNet_mask_generation.ipynb', 'MobileNet_bbox_generation.ipynb' and 'Yolov7_bbox_and_masks_generating_code.ipynb' separately for scenario 5 and scenario 7 of the Deepsese 6G dataset to generate the bounding boxes and masks from MobileNet v2 and Yolov7.
 
-**ML Model Training**
+**ML Model Training**\n
 Run main_beam.py files for both Scenario 5 and Scenario 7 in the semantic_mask_bbox_code folder. 
 This code will train the ML model, save the checkpoint and analysis files
 
 If you have any questions regarding the code and used dataset, please contact contact [Shoaib Imran](s.imran@asu.edu).
 
-**License and Referencing**
+# License and Referencing
 This code package is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. If you in any way use this code for research that results in publications, please cite our original article:
 
 S. Imran, G. Charan and A. Alkhateeb. “Environment Semantic Aided Communication: A Real World Demonstration for Beam Prediction.” arXiv preprint arXiv:2302.06736    (2023). 
