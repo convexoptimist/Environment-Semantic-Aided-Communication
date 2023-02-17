@@ -25,8 +25,6 @@ Run 'MobilNet_mask_generation.ipynb', 'MobileNet_bbox_generation.ipynb' and 'Yol
 Run main_beam.py files for both Scenario 5 and Scenario 7 in the semantic_mask_bbox_code folder. 
 This code will train the ML model, save the checkpoint and analysis files
 
-If you have any questions regarding the code and used dataset, please contact contact at <s.imran@asu.edu>
-
 
 # License and Referencing
 This code package is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. If you in any way use this code for research that results in publications, please cite our original article:
