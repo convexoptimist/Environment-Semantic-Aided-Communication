@@ -23,6 +23,15 @@ This code will train the ML model, save the checkpoint and analysis files
 
 If you have any questions regarding the code and used dataset, please contact contact [Shoaib Imran](s.imran@asu.edu).
 
+**License and Referencing**
+This code package is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. If you in any way use this code for research that results in publications, please cite our original article:
+
+S. Imran, G. Charan and A. Alkhateeb. “Environment Semantic Aided Communication: A Real World Demonstration for Beam Prediction.” arXiv preprint arXiv:2302.06736    (2023). 
+
+If you use the DeepSense 6G dataset, please also cite our dataset article:
+
+A. Alkhateeb, G. Charan, T. Osman, A. Hredzak, J. Morais, U. Demirhan, and N. Srinivas, “DeepSense 6G: A Large-Scale Real-World Multi-Modal Sensing and     Communication Dataset,” arXiv preprint arXiv:2211.09769 (2022) [Online]. Available: https://www.DeepSense6G.net
+
 
 
 
