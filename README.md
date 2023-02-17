@@ -3,7 +3,7 @@
 This is a python code package related to the following article: S.Imran et al., "Environment Semantic Aided Communication: A Real World Demonstration for Beam Prediction", arXiv:2302.06736
 
 # Abstract of the Article
-Millimeter-wave (mmWave) and terahertz (THz) communication systems adopt large antenna arrays to ensure adequate receive signal power. However, adjusting the narrow beams of these antenna arrays typically incurs high beam training overhead that scales with the number of antennas. Recently proposed vision-aided beam prediction solutions, which utilize raw RGB images captured at the basestation to predict the optimal beams, have shown initial promising results. However, they still have a considerable computational complexity, limiting their adoption in the real world. To address these challenges, this paper focuses on developing and comparing various approaches that extract lightweight semantic information from the visual data. The results show that the proposed solutions can significantly decrease the computational requirements while achieving similar beam prediction accuracy compared to the previously proposed vision-aided solutions.
+Millimeter-wave (mmWave) and terahertz (THz) communication systems adopt large antenna arrays to ensure adequate receive signal power. However, adjusting the narrow beams of these antenna arrays typically incurs high beam training overhead that scales with the number of antennas. Recently proposed vision-aided beam prediction solutions, which utilize raw RGB images captured at the basestation to predict the optimal beams, have shown initial promising results. However, they still have a considerable computational complexity, limiting their adoption in the real world. To address these challenges, this paper focuses on developing and comparing various approaches that extract lightweight semantic information from the visual data. The results show that the proposed solutions can significantly decrease the computational requirements while achieving similar beam prediction accuracy compared to the previously proposed vision-aided solutions.
 
 # Code Package Content
 
@@ -25,7 +25,8 @@ Run 'MobilNet_mask_generation.ipynb', 'MobileNet_bbox_generation.ipynb' and 'Yol
 Run main_beam.py files for both Scenario 5 and Scenario 7 in the semantic_mask_bbox_code folder. 
 This code will train the ML model, save the checkpoint and analysis files
 
-If you have any questions regarding the code and used dataset, please contact contact [Shoaib Imran](s.imran@asu.edu).
+If you have any questions regarding the code and used dataset, please contact contact at <s.imran@asu.edu>
+
 
 # License and Referencing
 This code package is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. If you in any way use this code for research that results in publications, please cite our original article:
