@@ -12,21 +12,21 @@ To reproduce the results, please follow these steps:
 
 **Download Dataset and Code** 
 
-Download Scenario 5 and Scenario 7 of Deepsense6G dataset.
-Download (or clone) the repository into a directory.
-Extract the dataset into the repository directory
+1. Download Scenario 5 and Scenario 7 of Deepsense6G dataset.
+2. Download (or clone) the repository into a directory.
+3. Extract the dataset into the repository directory
 
 **Generate Development Dataset** 
+1. To generate the bounding boxes and masks from MobileNet, run 'MobilNet_mask_generation.ipynb' and 'MobileNet_bbox_generation.ipynb' 
+2. To generate the bounding boxes and masks from Yolov7, run'Yolov7_bbox_and_masks_generating_code.ipynb'.
 
-Run 'MobilNet_mask_generation.ipynb', 'MobileNet_bbox_generation.ipynb' and 'Yolov7_bbox_and_masks_generating_code.ipynb' separately for scenario 5 and scenario 7 of the Deepsense 6G dataset to generate the bounding boxes and masks from MobileNet v2 and Yolov7.
-
-**ML Models Training**
-
-To train the ML models (except the ML model for predicting beam index using masks from YOLOv7), run main_beam.py or main_pos_beam.py files for both Scenario 5 and Scenario 7 in the semantic_mask_bbox_code folder. 
-To reproduce the results, run the eval_main_beam.py or eval_main_pos_beam.py codes in the semantic_mask_bbox_code folder. 
-
-**Training the Ml Model for predicting beam index from the masks of mobile units given by Yolov7**
-For training this ML model, run separately for both scenario 5 and scenario 7 'Yolov7_Masks_to_beam_prediction.ipynb' in the YOLOv7 masks_to_beam_pred folder . To reproduce the results, run 'Eval_Yolov7_Masks_to_beam_prediction.ipynb' in the same folder.
+**ML Models Training and Evaluation**
+1. For training:
+   a. run main_beam.py or main_pos_beam.py files for both Scenario 5 and Scenario 7 in the semantic_mask_bbox_code folder.
+   b. run 'Yolov7_Masks_to_beam_prediction.ipynb' in the YOLOv7 masks_to_beam_pred folder
+3. For reproducing the results/testing,
+   a. run the eval_main_beam.py or eval_main_pos_beam.py codes in the semantic_mask_bbox_code folder.
+   b. run 'Eval_Yolov7_Masks_to_beam_prediction.ipynb' in the YOLOv7 masks_to_beam_pred folder
 
 # License and Referencing
 This code package is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. If you in any way use this code for research that results in publications, please cite our original article:
