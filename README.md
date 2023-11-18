@@ -10,23 +10,27 @@ Millimeter-wave (mmWave) and terahertz (THz) communication systems adopt large a
 The scripts for generating the results of the ML solutions in the paper. This script adopts Scenario 5 and Scenario 7 of DeepSense6G dataset.
 To reproduce the results, please follow these steps:
 
-**Download Dataset and Code** 
-
+**Downloading Dataset and Code** 
 1. Download Scenario 5 and Scenario 7 of Deepsense6G dataset.
 2. Download (or clone) the repository into a directory.
 3. Extract the dataset into the repository directory
 
-**Generate Development Dataset** 
-1. To generate the bounding boxes and masks from MobileNet, run 'MobilNet_mask_generation.ipynb' and 'MobileNet_bbox_generation.ipynb' 
+**Generating Development Dataset** 
+1. To generate the bounding boxes and masks from MobileNet, run 'MobilNet_mask_generation.ipynb' and 'MobileNet_bbox_generation.ipynb'. 
 2. To generate the bounding boxes and masks from Yolov7, run'Yolov7_bbox_and_masks_generating_code.ipynb'.
 
-**ML Models Training and Evaluation**
-1. For training:
-   a. run main_beam.py or main_pos_beam.py files for both Scenario 5 and Scenario 7 in the semantic_mask_bbox_code folder.
-   b. run 'Yolov7_Masks_to_beam_prediction.ipynb' in the YOLOv7 masks_to_beam_pred folder
-3. For reproducing the results/testing,
-   a. run the eval_main_beam.py or eval_main_pos_beam.py codes in the semantic_mask_bbox_code folder.
-   b. run 'Eval_Yolov7_Masks_to_beam_prediction.ipynb' in the YOLOv7 masks_to_beam_pred folder
+**ML Models Training**
+1.  Run main_beam.py/main_pos_beam.py files for Scenario 5/Scenario 7 in the semantic_mask_bbox_code folder.
+2.  Run 'Yolov7_Masks_to_beam_prediction.ipynb' in the YOLOv7 masks_to_beam_pred folder.
+
+**ML Models Testing**
+1.   Run the eval_main_beam.py/eval_main_pos_beam.py codes in the semantic_mask_bbox_code folder with the checkpoint obtained from the training code.
+2.   Run 'Eval_Yolov7_Masks_to_beam_prediction.ipynb' in the YOLOv7 masks_to_beam_pred folder with the checkpoint obtained from the training code.
+
+**Reproducing Results**
+1.   Run the eval_main_beam.py/eval_main_pos_beam.py codes with the checkpoints provided in the semantic_mask_bbox_code folder. 
+2.   Run 'Eval_Yolov7_Masks_to_beam_prediction.ipynb' with the checkpoint provided in the YOLOv7 masks_to_beam_pred folder.
+
 
 # License and Referencing
 This code package is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. If you in any way use this code for research that results in publications, please cite our original article:
